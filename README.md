@@ -17,4 +17,6 @@ Neste repositório, trago o código fonte um plugin para firefox de estilizaçã
 - Na área "this firefox/Temporary Extensions clique el "Load Temporary Add-on" e importe o arquivo caveiratech-style.js.
 - Acesse o fórum caveiratech, e em seguida clique no icone da caveira vermelha que será inserido ao lado da url no navegador.
 
-![](https://caveiratech.com/wp-content/uploads/2016/08/logo.png)
+<p align="center">
+  <img src="https://caveiratech.com/wp-content/uploads/2016/08/logo.png">
+</p>
