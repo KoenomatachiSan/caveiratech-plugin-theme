@@ -1,0 +1,1 @@
+Link para acessar a pagina temporaria de addons firefox - about:debugging#/runtime/this-firefox
