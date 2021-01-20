@@ -28,6 +28,9 @@ body {
   background: #c0c0c0;
  }
 
+ #info_bar{
+	display: none;
+}
 
 `;
 
