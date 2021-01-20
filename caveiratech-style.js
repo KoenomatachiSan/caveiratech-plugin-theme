@@ -11,6 +11,9 @@ const CSS = `
 
 a:link, a:visited{color:#A9A9A9}
 
+
+#header { background:#101010;}
+
 `;
 
 
