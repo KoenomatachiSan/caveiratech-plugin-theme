@@ -3,16 +3,31 @@ const TITLE_REMOVE = "Remove CSS";
 const APPLICABLE_PROTOCOLS = ["http:", "https:"];
 
 const CSS = `
-/* Alterando CSS da área de usuário */
+
+#header .user { background:#c0c0c0; color: #005221; }
+
+a:link, a:visited{color:black}
 
 
-/* Alterando cor de background da aba */
-#header .user { background:#101010; color: #7FFF00; }
-
-a:link, a:visited{color:#A9A9A9}
+#header { background:#c0c0c0;}
 
 
-#header { background:#101010;}
+#main_b .wrapper { background:#c0c0c0;}
+
+.navigate_section {
+	display: none;
+}
+
+
+#element {
+	line-height: 0;
+	display: none;
+}
+
+body {
+  background: #c0c0c0;
+ }
+
 
 `;
 
@@ -23,7 +38,9 @@ function toggleCSS(tab) {
     if (title === TITLE_APPLY) {
       browser.pageAction.setIcon({ tabId: tab.id, path: "icons/active.png" });
       browser.pageAction.setTitle({ tabId: tab.id, title: TITLE_REMOVE });
+
       browser.tabs.insertCSS({ code: CSS });
+
     } else {
       browser.pageAction.setIcon({ tabId: tab.id, path: "icons/desactive.png" });
       browser.pageAction.setTitle({ tabId: tab.id, title: TITLE_APPLY });
