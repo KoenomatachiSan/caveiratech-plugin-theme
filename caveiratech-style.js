@@ -4,15 +4,24 @@ const APPLICABLE_PROTOCOLS = ["http:", "https:"];
 
 const CSS = `
 
-#header .user { background:#c0c0c0; color: #005221; }
+#header .user { background:#0D1117; color: white; border: 2px solid grey; border-radius: 15px;}
+#header .user img.avatar {
+	border-radius: 15px;
+}
 
-a:link, a:visited{color:black}
+.wrapper {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link, a:visited{color:#838B95}
 
 
-#header { background:#c0c0c0;}
+#header { background:#06090F;}
 
 
-#main_b .wrapper { background:#c0c0c0;}
+#main_b .wrapper { background:#06090F; margin-top:50px}
 
 .navigate_section {
 	display: none;
@@ -25,11 +34,45 @@ a:link, a:visited{color:black}
 }
 
 body {
-  background: #c0c0c0;
+  background: #06090F;
  }
 
  #info_bar{
 	display: none;
+}
+
+.topic_table td {
+	background: black;
+}
+
+#logo{
+  display: none;
+}
+
+/* Ocultando menu lateral */
+
+#sp_right{
+  display: none; 
+}
+
+#sp_collapse_side4{
+  display: none; 
+}
+
+.buttonlist ul li a {
+	display: none;
+}
+
+#topic_icons{
+  background:#06090F
+}
+
+#footer{
+  display: none;
+}
+
+#bar{
+  display: none;
 }
 
 `;
@@ -42,8 +85,8 @@ function toggleCSS(tab) {
       browser.pageAction.setIcon({ tabId: tab.id, path: "icons/active.png" });
       browser.pageAction.setTitle({ tabId: tab.id, title: TITLE_REMOVE });
 
+      
       browser.tabs.insertCSS({ code: CSS });
-
     } else {
       browser.pageAction.setIcon({ tabId: tab.id, path: "icons/desactive.png" });
       browser.pageAction.setTitle({ tabId: tab.id, title: TITLE_APPLY });
