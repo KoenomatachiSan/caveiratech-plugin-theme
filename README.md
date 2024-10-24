@@ -7,7 +7,7 @@ Neste repositório, trago o código fonte um plugin para firefox de estilizaçã
 
 **18/01/2021**
 
-- [x] Área de usuário na home page inicial estilizada
+- [x] Estilização do Fórum
 
 
 ## Como usar
